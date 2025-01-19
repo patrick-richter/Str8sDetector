@@ -1,0 +1,3 @@
+opencv-python
+rapidocr_onnxruntime
+numpy
