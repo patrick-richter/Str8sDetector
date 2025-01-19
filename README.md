@@ -106,3 +106,34 @@ The grid detection algorithm consists of the following steps:
    ```bash
    deactivate
    ```
+
+## How to Run the Project
+
+1. **Activate the virtual environment**:
+
+   Before running the script, ensure the virtual environment is activated:
+
+   ```bash
+   source .venv/bin/activate  # For Linux/MacOS
+   .venv\Scripts\activate   # For Windows
+   ```
+
+2. **Run the detection script**:
+
+   Use Python 3.11 to execute the script:
+
+   ```bash
+   python3.11 run_detection.py
+   ```
+
+3. **Change the input image**:
+
+   You can specify a different input image by modifying the `image_path` variable at the bottom of the `run_detection.py` script:
+
+   ```python
+   if __name__ == "__main__":
+       image_path = Path("path/to/your/image.jpeg")
+       grid = process_image(image_path)
+   ```
+
+   Replace `"path/to/your/image.jpeg"` with the path to your desired image file.
